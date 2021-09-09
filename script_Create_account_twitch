@@ -1,0 +1,31 @@
+
+VERSION BUILD=1010 RECORDER=CR
+SET !TIMEOUT_STEP 1
+SET !ERRORIGNORE YES
+URL GOTO=https://www.twitch.tv/
+SET !ENCRYPTION NO
+
+TAG POS=1 TYPE=IMG ATTR=SRC:https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-70x70.png
+
+WAIT SECONDS=3
+TAG POS=3 TYPE=DIV ATTR=TXT:Terminar<SP>Sessão
+WAIT SECONDS=3
+
+TAG POS=3 TYPE=DIV ATTR=TXT:Inscreve-te
+
+WAIT SECONDS=3
+TAG POS=1 TYPE=INPUT:PASSWORD FORM=ACTION:https://www.twitch.tv/ ATTR=ID:password-input CONTENT=""
+
+TAG POS=1 TYPE=INPUT:PASSWORD FORM=ACTION:https://www.twitch.tv/ ATTR=ID:password-input-confirmation CONTENT=""
+WAIT SECONDS=3
+TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:https://www.twitch.tv/ ATTR=ID:signup-username CONTENT=""
+WAIT SECONDS=3
+TAG POS=1 TYPE=SELECT FORM=ACTION:https://www.twitch.tv/ ATTR=TXT:MêsJaneiroFevereiroMarçoAbrilMaioJunhoJulhoAgostoSetembroOut* CONTENT=%4
+WAIT SECONDS=3
+TAG POS=1 TYPE=INPUT:EMAIL FORM=ACTION:https://www.twitch.tv/ ATTR=ID:email-input CONTENT=""
+WAIT SECONDS=3
+TAG POS=1 TYPE=SELECT FORM=ACTION:https://www.twitch.tv/ ATTR=TXT:MêsJaneiroFevereiroMarçoAbrilMaioJunhoJulhoAgostoSetembroOut* CONTENT=""
+WAIT SECONDS=3
+TAG XPATH="/html/body/div[3]/div/div/div/div/div/div[1]/div/div/div[3]/form/div/div[3]/div/div[2]/div[3]/div/input" CONTENT=""
+WAIT SECONDS=3
+TAG XPATH="/html/body/div[3]/div/div/div/div/div/div[1]/div/div/div[3]/form/div/div[3]/div/div[2]/div[1]/div/input" CONTENT=""
