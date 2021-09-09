@@ -4,9 +4,6 @@ SET !TIMEOUT_STEP 10
 WAIT SECONDS=3
 TAB T=2
 URL GOTO=chrome://newtab/
-WAIT SECONDS=2
-URL GOTO=https://www.youtube.com/watch?v=fV4DiAyExN0&list=PL95-l66MuHMiABEvtGNjz75dHmKHHu_iz&index=14
-WAIT SECONDS=2
+URL GOTO=https://www.youtube.com/[id]
 TAG POS=1 TYPE=DIV ATTR=ID:container
 TAG POS=1 TYPE=YT-ICON ATTR=CLASS:style-scope<SP>ytd-toggle-button-renderer
-WAIT SECONDS=2
