@@ -1,10 +1,13 @@
 VERSION BUILD=1010 RECORDER=CR
+
 SET !ERRORIGNORE YES
 SET !TIMEOUT_STEP 10
-WAIT SECONDS=3
 
+WAIT SECONDS=3
 TAB T=2
+
 URL GOTO=chrome://newtab/
 URL GOTO=https://www.youtube.com/[id]
+
 TAG POS=1 TYPE=DIV ATTR=ID:container
 TAG POS=1 TYPE=YT-ICON ATTR=CLASS:style-scope<SP>ytd-toggle-button-renderer
