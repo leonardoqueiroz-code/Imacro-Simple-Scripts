@@ -1,5 +1,7 @@
 Set Tab Browser: TAB T=[NUMBER]
+
 Exemple: TAB T=1
 
 Open WebSite: URL GOTO=[url]
+
 Exemple: URL GOTO=http://demo.imacros.net/Automate/Extract2
