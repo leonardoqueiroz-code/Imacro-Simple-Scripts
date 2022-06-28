@@ -1,0 +1,14 @@
+VERSION BUILD=1011 RECORDER=CR
+
+SET !VAR2 1 
+SET !VAR1 EVAL("{{!LOOP}}*{{!VAR2}}")
+
+URL GOTO=https://www.youtube.com/channel_switcher
+WAIT SECONDS=30
+TAG XPATH="//*[@id="contents"]/ytd-account-item-renderer[{{!VAR1}}]"
+WAIT SECONDS=30
+URL GOTO=https://www.youtube.com/watch?v=FWOG2UFjhY0
+WAIT SECONDS=30
+TAG XPATH="//*[@id="subscribe-button"]/ytd-subscribe-button-renderer/tp-yt-paper-button"
+WAIT SECONDS=400
+
