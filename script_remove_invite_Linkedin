@@ -1,10 +1,10 @@
 VERSION BUILD=1011 RECORDER=CR
 URL GOTO=https://www.linkedin.com/search/results/people/?geoUrn=%5B%22102713980%22%5D&network=%5B%22F%22%5D&origin=FACETED_SEARCH&sid=q*K
-WAIT SECONDS=3
+WAIT SECONDS=2
 TAG XPATH="//*[@id="main"]/div/div/div[1]/ul/li[1]/div/div/div[2]/div[1]/div[1]/div/span[1]/span/a/span/span[1]"
-WAIT SECONDS=3
+WAIT SECONDS=2
 TAG POS=2 TYPE=SPAN ATTR=TXT:Mais
-WAIT SECONDS=3
+WAIT SECONDS=2
 TAG POS=2 TYPE=SPAN ATTR=TXT:Remover<SP>conexão
-WAIT SECONDS=3
+WAIT SECONDS=2
 URL GOTO=https://www.linkedin.com/search/results/people/?´[params]
