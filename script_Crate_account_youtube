@@ -1,0 +1,8 @@
+VERSION BUILD=1011 RECORDER=CR
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*10 + 1); randomNumber;")
+
+URL GOTO=https://accounts.google.com/b/0/PlusPageSignUp?continue=http%3A%2F%2Fwww.youtube.com%2Fcreate_channel%3Faction_create_plus_page_channel%3D1%26no_switch%3DFalse%26next%3D%252Fprofile&hl=pt&ppsu=AEf0UR-_whFAMt7IkgvqJXTtDeCGpTrMGQZDKuY9aYueJ3q8yVqbMr6fbXO7S-OQf1dCYsoJcXcdomHOy2j2ZKk2AO13DhQspg&service=youtube&ltmpl=addbrand
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:createaccount ATTR=ID:PlusPageName CONTENT={{!var1}}
+TAG POS=1 TYPE=LABEL FORM=ID:createaccount ATTR=TXT:Entendo<SP>que<SP>estou<SP>criando<SP>uma<SP>nova<SP>Conta*
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:createaccount ATTR=ID:ConsentCheckbox CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:createaccount ATTR=ID:submitbutton
