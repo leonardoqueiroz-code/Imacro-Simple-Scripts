@@ -34,8 +34,8 @@ Instalação
 
 <div align="center">
 1. Download do script <br>
-2. Importar solução no plugin imacro
-3. Selecionar repetições
+2. Importar solução no plugin imacro <br>
+3. Selecionar repetições <br>
 4. Executar macro;
 </div>
 
@@ -45,7 +45,7 @@ Como usar
 	🚧  Pre Requisitos 🚧
 </h4>
 
-- Chorme, firefox ou opera
+- Chorme, firefox ou opera <br>
 - imacro plugin
 
 Estrutura das pastas
