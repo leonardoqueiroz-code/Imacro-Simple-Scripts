@@ -51,11 +51,11 @@ Como usar
 Estrutura das pastas
 =================
 
-Auto like Youtube ,
-Create account Twitch,
-Invite Linkedin
-Remove invite Linkedin
-
+- Auto like Youtube ,
+= Create account Twitch,
+- Invite Linkedin
+- Remove invite Linkedin
+- Create account youtube
 
 Tecnologias
 =================
