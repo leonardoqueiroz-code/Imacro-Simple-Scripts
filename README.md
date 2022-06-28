@@ -61,6 +61,6 @@ Tecnologias
 =================
 
 - Imacro
-- Js
+- C++
 
 
